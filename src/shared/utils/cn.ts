@@ -5,7 +5,7 @@ export type ClassValue =
   | null
   | undefined
   | ClassValue[]
-  | { [className: string]: any };
+  | { [className: string]: unknown };
 
 export function cn(...inputs: ClassValue[]) {
   const classes: string[] = [];

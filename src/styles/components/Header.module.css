@@ -1,8 +1,0 @@
-.header {
-  background-color: var(--background-white);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 0.1rem solid #d0d2d3;
-  padding: 1rem;
-}

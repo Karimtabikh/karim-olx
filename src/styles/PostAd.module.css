@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #002f34;
+  margin: 0 0 1.5rem 0;
+}
+
+.errorMessage {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.jsonPreview {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.successMessage {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  color: #15803d;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.jsonPreview h3 {
+  font-size: 1.1rem;
+  color: #002f34;
+  margin-bottom: 1rem;
+}
+
+.jsonData {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.previewActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.backBtn,
+.newAdBtn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.backBtn {
+  background: white;
+  color: #002f34;
+  border: 2px solid #002f34;
+}
+
+.backBtn:hover {
+  background: #f8f9fa;
+}
+
+.newAdBtn {
+  background: #002f34;
+  color: white;
+}
+
+.newAdBtn:hover {
+  background: #00474f;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .pageTitle {
+    font-size: 1.25rem;
+  }
+}

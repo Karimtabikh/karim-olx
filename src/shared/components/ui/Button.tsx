@@ -1,15 +1,15 @@
 import { cn } from "@/shared/utils/cn";
 import styles from "./Button.module.css";
 
-interface ButtonProps {
+type ButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "ghost";
   size?: "small" | "medium" | "large";
   className?: string;
   disabled?: boolean;
-}
+};
 
 export default function Button({
   children,

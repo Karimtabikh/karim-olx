@@ -2,13 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../ui/Button";
 import Flexbox from "../ui/Flexbox";
+import { useLanguage } from "@/shared/providers/LanguageProvider";
+import { useTranslation } from "@/shared/hooks/useTranslation";
 import styles from "./Header.module.css";
 
 export default function Header() {
+  const { language, toggleLanguage } = useLanguage();
+  const { t } = useTranslation();
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Flexbox justify="space-between" align="center">
+        <Flexbox direction="row" justify="space-between" align="center">
           <div>
             <Link href="/">
               <Image
@@ -21,9 +26,11 @@ export default function Header() {
             </Link>
           </div>
           <Flexbox justify="space-between" align="center" gap={16}>
-            <Button variant="primary">English</Button>
+            <Button variant="ghost" onClick={toggleLanguage}>
+              {language === "en" ? t("arabic") : t("english")}
+            </Button>
             <Link href="/post-ad" className={styles.link}>
-              Post an ad
+              {t("postAd")}
             </Link>
           </Flexbox>
         </Flexbox>

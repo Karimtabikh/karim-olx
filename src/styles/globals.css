@@ -17,6 +17,7 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 html {
@@ -30,7 +31,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background);
+  background-color: var(--background-white);
   color: var(--text-primary);
   line-height: 1.6;
 }
@@ -101,6 +102,45 @@ ol {
   list-style: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.5rem;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 1.5rem;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 14px;
@@ -116,5 +156,9 @@ ol {
 
   h3 {
     font-size: 1.35rem;
+  }
+
+  .container {
+    padding: 0 0.75rem;
   }
 }

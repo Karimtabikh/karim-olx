@@ -4,11 +4,11 @@ import Header from "@/shared/components/layout/Header";
 import Footer from "@/shared/components/layout/Footer";
 import styles from "./Layout.module.css";
 
-interface LayoutProps {
+type LayoutProps = {
   children: ReactNode;
   title?: string;
   description?: string;
-}
+};
 
 export default function Layout({
   children,

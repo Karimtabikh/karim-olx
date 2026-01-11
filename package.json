@@ -10,9 +10,15 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@tanstack/react-query": "^5.90.16",
+    "embla-carousel-react": "^8.6.0",
+    "ky": "^1.14.2",
     "next": "16.1.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-hook-form": "^7.71.0",
+    "zod": "^4.3.5"
   },
   "devDependencies": {
     "@types/node": "^20",
