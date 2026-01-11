@@ -1,0 +1,5 @@
+.footer {
+  background-color: var(--background-yellow);
+  color: var(--text-primary);
+  padding: 1rem;
+}
